@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 min-h-screen flex flex-col">
+  <div class="bg-gray-50 min-h-screen flex flex-col font-meiryo">
     <!-- Header -->
     <header class="bg-white text-gray-800 shadow-md fixed top-0 left-0 right-0 z-50">
       <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -209,4 +209,7 @@ const selectionProcess = ref<string[]>(['応募', '書類選考', '面接', '内
 
 <style scoped>
 /* スタイルは Tailwind CSS クラスで対応しているため、追加のCSSは最小限に抑えています */
+body {
+  font-family: 'Meiryo', sans-serif;
+}
 </style>
