@@ -7,7 +7,7 @@
           <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DALL%C2%B7E%202024-04-30%2013.04.01%20-%20A%20simple%20and%20cute%20koala%20logo,%20primarily%20in%20shades%20of%20gray%20to%20represent%20the%20koala%20and%20green%20for%20nearby%20eucalyptus%20leaves.%20The%20koala%20should%20be%20adorable%20-uPmPjSwEigBJUnJbcZaFa3s7Jvr8hE.webp" alt="KOPS Logo" class="h-10 w-10 mr-2">
           <a href="#" class="text-2xl font-bold text-gray-800">KOPS</a>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-center justify-end flex-grow">
           <nav class="hidden md:flex space-x-4 mr-4">
             <a href="#" class="text-gray-600 hover:text-green-500">Home</a>
             <a href="#" class="text-gray-600 hover:text-green-500">About</a>
@@ -28,8 +28,10 @@
         <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
         <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Services</a>
         <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact</a>
-        <a href="https://docs.google.com/forms/d/1GCRT-8486N12IWEg2fSIEuyjQzVT5vXa5jek742WMHA/" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">お問い合わせ</a>
-        <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">応募フォーム</a>
+        <div class="px-4 py-2 flex flex-col space-y-2">
+          <a href="https://docs.google.com/forms/d/1GCRT-8486N12IWEg2fSIEuyjQzVT5vXa5jek742WMHA/" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm text-center">お問い合わせ</a>
+          <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm text-center">応募フォーム</a>
+        </div>
       </div>
     </header>
 
