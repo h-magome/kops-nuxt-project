@@ -43,9 +43,20 @@
           仕事も収入も自分で選ぶ<br>
           新しいエンジニアの形。
         </h1>
-        <button class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md">
+        <button class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md">
           Learn More
         </button>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800">MISSION</h2>
+        <p class="text-xl mb-8 text-green-500 font-semibold">私たちの働き方で、IT業界を変えていく。</p>
+        <p class="text-lg mb-8 text-gray-600">
+          株式会社KOPSでは社員が自ら案件を選びながらスキルに見合った報酬を得る、新しい働き方をはじめています。
+        </p>
       </div>
     </section>
 
