@@ -63,7 +63,8 @@
     <!-- Representative Section -->
     <section class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">代表挨拶</h2>
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">MESSAGE</h2>
+        <p class="text-xl mb-8 text-green-500 font-semibold text-center">「これほどスキルのある人がどうして評価されないのだろう…？」</p>
         <p class="text-lg mb-8 text-gray-600 text-left">私は、WordPressの販売営業からwebエンジニアに転身し、フリーランスとして数年活動をしていました。その時に目の当たりにしたのは、同じプロジェクトチームで働く同僚エンジニアの不遇な環境や待遇。「これほどスキルのある人がどうして評価されないのだろう…？」そんな違和感とともに、IT業界で働く方々がより幸せに働ける世の中をつくりたいという想いから、KOPSを立ち上げました。</p>
         <p class="text-lg mb-8 text-gray-600 text-left">ちなみに、その時の同僚エンジニアが社員第一号です。</p>
         <p class="text-lg mb-8 text-gray-600 text-left">KOPSでは、「自由正社員」という新しいワークスタイルを提唱し、エンジニア一人ひとりが案件を自ら選択し、理想の報酬や働き方を実現させています。</p>
