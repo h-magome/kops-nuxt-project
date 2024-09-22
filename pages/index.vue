@@ -5,7 +5,7 @@
       <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center">
           <div class="flex items-center h-16">
-            <img src="/images/KOPSアイコン.webp" alt="KOPS Logo" class="h-full w-auto mr-3">
+            <img src="/images/KOPSアイコン.webp" alt="KOPS Logo" class="h-full w-auto">
             <a href="#" class="text-2xl font-bold text-green-500 flex items-center h-full" style="font-family: 'Rounded Mplus 1c', sans-serif;">KOPS</a>
           </div>
         </div>
