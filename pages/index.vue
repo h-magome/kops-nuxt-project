@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-50 min-h-screen flex flex-col font-meiryo">
     <!-- Header -->
-    <header class="bg-white text-gray-800 shadow-md fixed top-0 left-0 right-0 z-50">
+    <header class="bg-white text-gray-800 shadow-md fixed top-0 left-0 right-0 z-50 rounded-b-lg">
       <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center">
           <div class="flex items-center h-16">
@@ -25,7 +25,7 @@
           <X v-else class="text-gray-800" />
         </button>
       </div>
-      <div v-if="isMenuOpen" class="md:hidden bg-white py-2">
+      <div v-if="isMenuOpen" class="md:hidden bg-white py-2 rounded-b-lg">
         <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</a>
         <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
         <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Services</a>
@@ -38,8 +38,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center py-20 mt-16" style="background-image: url('https://kops-data-images.s3.ap-northeast-1.amazonaws.com/HERO%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E9%83%BD%E5%B8%82%E7%94%BB%E5%83%8F.jpg');">
-      <div class="absolute inset-0 bg-blue-900 opacity-60"></div>
+    <section class="relative bg-cover bg-center py-20 mt-16 rounded-lg" style="background-image: url('https://kops-data-images.s3.ap-northeast-1.amazonaws.com/HERO%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E9%83%BD%E5%B8%82%E7%94%BB%E5%83%8F.jpg');">
+      <div class="absolute inset-0 bg-blue-900 opacity-60 rounded-lg"></div>
       <div class="container mx-auto px-4 text-center relative z-10">
         <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
           仕事も収入も自分で選ぶ<br>
@@ -52,7 +52,7 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white rounded-lg">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8 text-gray-800">MISSION</h2>
         <p class="text-xl mb-8 text-green-500 font-semibold">私たちの働き方で、IT業界を変えていく。</p>
@@ -63,7 +63,7 @@
     </section>
 
     <!-- Representative Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50 rounded-lg">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">MESSAGE</h2>
         <p class="text-xl mb-8 text-green-500 font-semibold text-center">「これほどスキルのある人がどうして評価されないのだろう…？」</p>
@@ -83,7 +83,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20">
+    <section class="py-20 rounded-lg">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -97,7 +97,7 @@
     </section>
 
     <!-- Additional Links Section -->
-    <section class="py-10 bg-gray-100">
+    <section class="py-10 bg-gray-100 rounded-lg">
       <div class="container mx-auto px-4">
         <div class="flex flex-col space-y-4">
           <a href="#" class="text-green-600 hover:text-green-700 text-lg">→給与情報・還元制度はこちら</a>
@@ -108,14 +108,14 @@
     </section>
 
     <!-- Company Information Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white rounded-lg">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">KOPSについて</h2>
         <div class="mb-8">
           <a href="#" class="text-green-600 hover:text-green-700 text-lg">→会社情報はこちら</a>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-8">
-          <img v-for="graph in graphs" :key="graph.alt" :src="graph.src" :alt="graph.alt" class="w-full h-auto">
+          <img v-for="graph in graphs" :key="graph.alt" :src="graph.src" :alt="graph.alt" class="w-full h-auto rounded-lg">
         </div>
         <div class="flex flex-col space-y-4">
           <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="text-green-600 hover:text-green-700 text-lg">→採用情報はこちら</a>
@@ -125,7 +125,7 @@
     </section>
 
     <!-- Employee Interview Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50 rounded-lg">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">社員インタビュー</h2>
         <div class="flex justify-center space-x-8">
@@ -137,7 +137,7 @@
     </section>
 
     <!-- Selection Process Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white rounded-lg">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">選考フロー</h2>
         <div class="flex flex-wrap justify-center gap-8">
@@ -149,7 +149,7 @@
     </section>
 
     <!-- Application Statement Section -->
-    <section class="py-20 bg-gray-100">
+    <section class="py-20 bg-gray-100 rounded-lg">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8 text-gray-800">応募はこちら！</h2>
         <p class="text-lg mb-4 text-gray-600">あなたと一緒に働けることを楽しみにしております。</p>
@@ -161,7 +161,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-800 text-white py-8 rounded-t-lg">
       <div class="container mx-auto px-4">
         <div class="text-center">
           <p>&copy; 2024 KOPS</p>
