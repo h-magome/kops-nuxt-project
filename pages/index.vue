@@ -64,10 +64,10 @@
     <section class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">代表挨拶</h2>
-        <p class="text-xl mb-8 text-gray-600 text-left">私は、WordPressの販売営業からwebエンジニアに転身し、フリーランスとして数年活動をしていました。その時に目の当たりにしたのは、同じプロジェクトチームで働く同僚エンジニアの不遇な環境や待遇。「これほどスキルのある人がどうして評価されないのだろう…？」そんな違和感とともに、IT業界で働く方々がより幸せに働ける世の中をつくりたいという想いから、KOPSを立ち上げました。</p>
-        <p class="text-xl mb-8 text-gray-600 text-left">ちなみに、その時の同僚エンジニアが社員第一号です。</p>
-        <p class="text-xl mb-8 text-gray-600 text-left">KOPSでは、「自由正社員」という新しいワークスタイルを提唱し、エンジニア一人ひとりが案件を自ら選択し、理想の報酬や働き方を実現させています。</p>
-        <p class="text-xl mb-8 text-gray-600 text-left">そんな中で、ぜひ一緒に働きたいのは、人生における目標や夢がはっきりしている方。必ずしも仕事でなくても、「趣味の時間がもっと欲しい」「私生活を豊かにしたい」などでも構いません。何かしら叶えたい未来のある方を、応援する会社であり続けたいと考えています。</p>
+        <p class="text-lg mb-8 text-gray-600 text-left">私は、WordPressの販売営業からwebエンジニアに転身し、フリーランスとして数年活動をしていました。その時に目の当たりにしたのは、同じプロジェクトチームで働く同僚エンジニアの不遇な環境や待遇。「これほどスキルのある人がどうして評価されないのだろう…？」そんな違和感とともに、IT業界で働く方々がより幸せに働ける世の中をつくりたいという想いから、KOPSを立ち上げました。</p>
+        <p class="text-lg mb-8 text-gray-600 text-left">ちなみに、その時の同僚エンジニアが社員第一号です。</p>
+        <p class="text-lg mb-8 text-gray-600 text-left">KOPSでは、「自由正社員」という新しいワークスタイルを提唱し、エンジニア一人ひとりが案件を自ら選択し、理想の報酬や働き方を実現させています。</p>
+        <p class="text-lg mb-8 text-gray-600 text-left">そんな中で、ぜひ一緒に働きたいのは、人生における目標や夢がはっきりしている方。必ずしも仕事でなくても、「趣味の時間がもっと欲しい」「私生活を豊かにしたい」などでも構いません。何かしら叶えたい未来のある方を、応援する会社であり続けたいと考えています。</p>
       <div class="flex justify-center space-x-4">
           <a href="https://x.com/cafromjakarta?s=21" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">
             代表のTwitter
@@ -149,8 +149,8 @@
     <section class="py-20 bg-gray-100">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8 text-gray-800">応募はこちら！</h2>
-        <p class="text-xl mb-4 text-gray-600">あなたと一緒に働けることを楽しみにしております。</p>
-        <p class="text-xl mb-8 text-gray-600">ぜひKOPSであなただけの「自由正社員」の形を見つけませんか</p>
+        <p class="text-lg mb-4 text-gray-600">あなたと一緒に働けることを楽しみにしております。</p>
+        <p class="text-lg mb-8 text-gray-600">ぜひKOPSであなただけの「自由正社員」の形を見つけませんか</p>
         <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/" class="bg-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition duration-300">
           応募フォーム
         </a>
