@@ -15,7 +15,6 @@
               <a href="#" class="text-gray-600 hover:text-green-500">Contact</a>
             </nav>
             <div class="flex space-x-2">
-              <a href="https://docs.google.com/forms/d/1GCRT-8486N12IWEg2fSIEuyjQzVT5vXa5jek742WMHA/" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm">お問い合わせ</a>
               <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm">応募フォーム</a>
             </div>
           </div>
@@ -35,11 +34,13 @@
       </header>
   
       <!-- Hero Section -->
-      <section class="relative bg-cover bg-center py-20 mt-16" style="background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/toshi4trim2652021111237-Y2FTgPGV6lA9up3I8bVfLQaGAslfjE.jpg');">
+      <section class="relative bg-cover bg-center py-20 mt-16" style="background-image: url('https://kops-data-images.s3.ap-northeast-1.amazonaws.com/HERO%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E9%83%BD%E5%B8%82%E7%94%BB%E5%83%8F.jpg');">
         <div class="absolute inset-0 bg-blue-900 opacity-60"></div>
         <div class="container mx-auto px-4 text-center relative z-10">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">私たちの働き方でIT業界を変えていく</h1>
-          <p class="text-xl mb-8 text-white drop-shadow-md">「自由正社員」という新たな働き方で変革を起こし、日本のIT業界で働く人々の幸福感を高め、業界全体を好転させていきます。100人100通りのキャリア、働き方を実現し、理想の働き方を叶えたい人を応援します。</p>
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
+            仕事も収入も自分で選ぶ<br>
+            新しいエンジニアの形。
+          </h1>
           <button class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md">
             Learn More
           </button>
