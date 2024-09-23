@@ -163,8 +163,16 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8 rounded-t-lg">
       <div class="container mx-auto px-4">
-        <div class="text-center">
-          <p>&copy; 2024 KOPS</p>
+        <div class="flex flex-col md:flex-row justify-between items-center mb-4">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p>&copy; 2024 KOPS</p>
+          </div>
+          <nav class="flex flex-wrap justify-center md:justify-end space-x-4">
+            <a href="#" class="text-white hover:text-green-500">Home</a>
+            <a href="#" class="text-white hover:text-green-500">About</a>
+            <a href="#" class="text-white hover:text-green-500">Services</a>
+            <a href="#" class="text-white hover:text-green-500">Contact</a>
+          </nav>
         </div>
       </div>
     </footer>
