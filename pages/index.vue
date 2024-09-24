@@ -52,8 +52,9 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="py-20 bg-white rounded-lg">
-      <div class="container mx-auto px-4 text-center">
+    <section class="py-20 bg-white rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 text-center relative z-10">
         <h2 class="text-3xl font-bold mb-8 text-gray-800">MISSION</h2>
         <p class="text-xl mb-8 text-green-500 font-semibold">私たちの働き方で、IT業界を変えていく。</p>
         <p class="text-lg mb-8 text-gray-700">
@@ -63,8 +64,9 @@
     </section>
 
     <!-- Representative Section -->
-    <section class="py-20 bg-gray-200 rounded-lg">
-      <div class="container mx-auto px-4">
+    <section class="py-20 bg-gray-200 rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">MESSAGE</h2>
         <p class="text-xl mb-8 text-green-500 font-semibold text-center">「これほどスキルのある人がどうして評価されないのだろう…？」</p>
         <p class="text-lg mb-8 text-gray-700 text-left">私は、WordPressの販売営業からwebエンジニアに転身し、フリーランスとして数年活動をしていました。その時に目の当たりにしたのは、同じプロジェクトチームで働く同僚エンジニアの不遇な環境や待遇。「これほどスキルのある人がどうして評価されないのだろう…？」そんな違和感とともに、IT業界で働く方々がより幸せに働ける世の中をつくりたいという想いから、KOPSを立ち上げました。</p>
@@ -83,8 +85,9 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 bg-white rounded-lg">
-      <div class="container mx-auto px-4">
+    <section class="py-20 bg-white rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="(feature, index) in features" :key="index" class="bg-gray-100 p-6 rounded-lg shadow-md">
@@ -97,8 +100,9 @@
     </section>
 
     <!-- Additional Links Section -->
-    <section class="py-10 bg-gray-200 rounded-lg">
-      <div class="container mx-auto px-4">
+    <section class="py-10 bg-gray-200 rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 relative z-10">
         <div class="flex flex-col space-y-4">
           <a href="#" class="text-green-500 hover:text-green-600 text-lg">→給与情報・還元制度はこちら</a>
           <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="text-green-500 hover:text-green-600 text-lg">→採用情報はこちら</a>
@@ -108,8 +112,9 @@
     </section>
 
     <!-- Company Information Section -->
-    <section class="py-20 bg-white rounded-lg">
-      <div class="container mx-auto px-4">
+    <section class="py-20 bg-white rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">KOPSについて</h2>
         <div class="mb-8">
           <a href="#" class="text-green-500 hover:text-green-600 text-lg">→会社情報はこちら</a>
@@ -125,8 +130,9 @@
     </section>
 
     <!-- Employee Interview Section -->
-    <section class="py-20 bg-gray-200 rounded-lg">
-      <div class="container mx-auto px-4">
+    <section class="py-20 bg-gray-200 rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">社員インタビュー</h2>
         <div class="flex justify-center space-x-8">
           <a v-for="employee in employees" :key="employee" href="#" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">
@@ -137,8 +143,9 @@
     </section>
 
     <!-- Selection Process Section -->
-    <section class="py-20 bg-white rounded-lg">
-      <div class="container mx-auto px-4">
+    <section class="py-20 bg-white rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">選考フロー</h2>
         <div class="flex flex-wrap justify-center gap-8">
           <div v-for="(step, index) in selectionProcess" :key="index" class="bg-gray-200 p-6 rounded-lg shadow-md text-center w-48">
@@ -149,8 +156,9 @@
     </section>
 
     <!-- Application Statement Section -->
-    <section class="py-20 bg-gray-200 rounded-lg">
-      <div class="container mx-auto px-4 text-center">
+    <section class="py-20 bg-gray-200 rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 text-center relative z-10">
         <h2 class="text-3xl font-bold mb-8 text-gray-800">応募はこちら！</h2>
         <p class="text-lg mb-4 text-gray-700">あなたと一緒に働けることを楽しみにしております。</p>
         <p class="text-lg mb-8 text-gray-700">ぜひKOPSであなただけの「自由正社員」の形を見つけませんか</p>
