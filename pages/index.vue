@@ -55,8 +55,8 @@
     <section id="mission" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 text-center relative z-10">
-        <h2 class="text-3xl font-bold mb-8 text-gray-800">MISSION</h2>
-        <p class="text-xl mb-8 text-green-500 font-semibold">私たちの働き方で、IT業界を変えていく。</p>
+        <p class="text-3xl font-bold mb-8 text-gray-800">MISSION</p>
+        <h2 class="text-4xl mb-8 text-green-500 font-semibold">私たちの働き方で、IT業界を変えていく。</h2>
         <p class="text-lg mb-8 text-gray-700">
           株式会社KOPSでは社員が自ら案件を選びながらスキルに見合った報酬を得る、新しい働き方をはじめています。
         </p>
@@ -66,14 +66,22 @@
     <!-- Representative Section -->
     <section id="message" class="py-20 bg-gray-200 rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
-      <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">MESSAGE</h2>
-        <p class="text-xl mb-8 text-green-500 font-semibold text-center">「これほどスキルのある人がどうして評価されないのだろう…？」</p>
-        <p class="text-lg mb-8 text-gray-700 text-left">私は、WordPressの販売営業からwebエンジニアに転身し、フリーランスとして数年活動をしていました。その時に目の当たりにしたのは、同じプロジェクトチームで働く同僚エンジニアの不遇な環境や待遇。「これほどスキルのある人がどうして評価されないのだろう…？」そんな違和感とともに、IT業界で働く方々がより幸せに働ける世の中をつくりたいという想いから、KOPSを立ち上げました。</p>
-        <p class="text-lg mb-8 text-gray-700 text-left">ちなみに、その時の同僚エンジニアが社員第一号です。</p>
-        <p class="text-lg mb-8 text-gray-700 text-left">KOPSでは、「自由正社員」という新しいワークスタイルを提唱し、エンジニア一人ひとりが案件を自ら選択し、理想の報酬や働き方を実現させています。</p>
-        <p class="text-lg mb-8 text-gray-700 text-left">そんな中で、ぜひ一緒に働きたいのは、人生における目標や夢がはっきりしている方。必ずしも仕事でなくても、「趣味の時間がもっと欲しい」「私生活を豊かにしたい」などでも構いません。何かしら叶えたい未来のある方を、応援する会社であり続けたいと考えています。</p>
-      <div class="flex justify-center space-x-4">
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <p class="text-3xl font-bold mb-8 text-gray-800">MESSAGE</p>
+        <h2 class="text-4xl mb-8 text-green-500 font-semibold">「これほどスキルのある人がどうして評価されないのだろう…？」</h2>
+        <p class="text-lg mb-8 text-gray-700">
+          私は、WordPressの販売営業からwebエンジニアに転身し、フリーランスとして数年活動をしていました。その時に目の当たりにしたのは、同じプロジェクトチームで働く同僚エンジニアの不遇な環境や待遇。「これほどスキルのある人がどうして評価されないのだろう…？」そんな違和感とともに、IT業界で働く方々がより幸せに働ける世の中をつくりたいという想いから、KOPSを立ち上げました。
+        </p>
+        <p class="text-lg mb-8 text-gray-700">
+          ちなみに、その時の同僚エンジニアが社員第一号です。
+        </p>
+        <p class="text-lg mb-8 text-gray-700">
+          KOPSでは、「自由正社員」という新しいワークスタイルを提唱し、エンジニア一人ひとりが案件を自ら選択し、理想の報酬や働き方を実現させています。
+        </p>
+        <p class="text-lg mb-8 text-gray-700">
+          そんな中で、ぜひ一緒に働きたいのは、人生における目標や夢がはっきりしている方。必ずしも仕事でなくても、「趣味の時間がもっと欲しい」「私生活を豊かにしたい」などでも構いません。何かしら叶えたい未来のある方を、応援する会社であり続けたいと考えています。
+        </p>
+        <div class="flex justify-center space-x-4">
           <a href="https://x.com/cafromjakarta?s=21" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">
             代表のTwitter
           </a>
