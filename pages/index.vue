@@ -69,25 +69,32 @@
       <div class="container mx-auto px-4 text-center relative z-10">
         <p class="text-3xl font-bold mb-8 text-gray-800">MESSAGE</p>
         <h2 class="text-4xl mb-8 text-green-500 font-semibold">「これほどスキルのある人がどうして評価されないのだろう…？」</h2>
-        <p class="text-lg mb-8 text-gray-700">
-          私は、WordPressの販売営業からwebエンジニアに転身し、フリーランスとして数年活動をしていました。その時に目の当たりにしたのは、同じプロジェクトチームで働く同僚エンジニアの不遇な環境や待遇。「これほどスキルのある人がどうして評価されないのだろう…？」そんな違和感とともに、IT業界で働く方々がより幸せに働ける世の中をつくりたいという想いから、KOPSを立ち上げました。
-        </p>
-        <p class="text-lg mb-8 text-gray-700">
-          ちなみに、その時の同僚エンジニアが社員第一号です。
-        </p>
-        <p class="text-lg mb-8 text-gray-700">
-          KOPSでは、「自由正社員」という新しいワークスタイルを提唱し、エンジニア一人ひとりが案件を自ら選択し、理想の報酬や働き方を実現させています。
-        </p>
-        <p class="text-lg mb-8 text-gray-700">
-          そんな中で、ぜひ一緒に働きたいのは、人生における目標や夢がはっきりしている方。必ずしも仕事でなくても、「趣味の時間がもっと欲しい」「私生活を豊かにしたい」などでも構いません。何かしら叶えたい未来のある方を、応援する会社であり続けたいと考えています。
-        </p>
-        <div class="flex justify-center space-x-4">
-          <a href="https://x.com/cafromjakarta?s=21" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">
-            代表のTwitter
-          </a>
-          <a href="https://even-wheel-148.notion.site/275c8bd3ec004fe18061816694d39726" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">
-            代表プロフィールはこちら
-          </a>
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <img src="/images/KOPSアイコン.webp" alt="馬込 浩" class="rounded-full w-64 h-64 object-cover mb-8 md:mb-0 md:mr-12" />
+          <div class="max-w-lg">
+            <div class="text-left">
+              <p class="text-lg mb-8 text-gray-700">
+                私は、WordPressの販売営業からwebエンジニアに転身し、フリーランスとして数年活動をしていました。その時に目の当たりにしたのは、同じプロジェクトチームで働く同僚エンジニアの不遇な環境や待遇。「これほどスキルのある人がどうして評価されないのだろう…？」そんな違和感とともに、IT業界で働く方々がより幸せに働ける世の中をつくりたいという想いから、KOPSを立ち上げました。
+              </p>
+              <p class="text-lg mb-8 text-gray-700">
+                ちなみに、その時の同僚エンジニアが社員第一号です。
+              </p>
+              <p class="text-lg mb-8 text-gray-700">
+                KOPSでは、「自由正社員」という新しいワークスタイルを提唱し、エンジニア一人ひとりが案件を自ら選択し、理想の報酬や働き方を実現させています。
+              </p>
+              <p class="text-lg mb-8 text-gray-700">
+                そんな中で、ぜひ一緒に働きたいのは、人生における目標や夢がはっきりしている方。必ずしも仕事でなくても、「趣味の時間がもっと欲しい」「私生活を豊かにしたい」などでも構いません。何かしら叶えたい未来のある方を、応援する会社であり続けたいと考えています。
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="https://x.com/cafromjakarta?s=21" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                代表のTwitter
+              </a>
+              <a href="https://even-wheel-148.notion.site/275c8bd3ec004fe18061816694d39726" target="_blank" rel="noopener noreferrer" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                代表プロフィールはこちら
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -128,8 +135,21 @@
       </div>
     </section>
 
+    <!-- Employee Interview Section -->
+    <section class="py-20 bg-white rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">社員インタビュー</h2>
+        <div class="flex justify-center space-x-8">
+          <a v-for="employee in employees" :key="employee" href="#" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">
+            {{ employee }}さん
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Company Information Section -->
-    <section id="company-data" class="py-20 bg-white rounded-lg relative">
+    <section id="company-data" class="py-20 bg-gray-200 rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">DATAで見るKOPS</h2>
@@ -142,19 +162,6 @@
         <div class="flex flex-col space-y-4">
           <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="text-green-500 hover:text-green-600 text-lg">→採用情報はこちら</a>
           <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="text-green-500 hover:text-green-600 text-lg">→応募フォームはこちら</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Employee Interview Section -->
-    <section class="py-20 bg-gray-200 rounded-lg relative">
-      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
-      <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">社員インタビュー</h2>
-        <div class="flex justify-center space-x-8">
-          <a v-for="employee in employees" :key="employee" href="#" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">
-            {{ employee }}さん
-          </a>
         </div>
       </div>
     </section>
