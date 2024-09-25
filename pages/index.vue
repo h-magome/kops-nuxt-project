@@ -139,12 +139,17 @@
     <!-- Employee Interview Section -->
     <section class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
-      <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">社員インタビュー</h2>
-        <div class="flex justify-center space-x-8">
-          <a v-for="employee in employees" :key="employee" href="#" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">
-            {{ employee }}さん
-          </a>
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <p class="text-3xl font-bold mb-8 text-gray-800">INTERVIEW</p>
+        <h2 class="text-4xl mb-8 text-green-500 font-semibold">社員インタビュー</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div v-for="employee in employees" :key="employee.name" class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img :src="employee.image" :alt="employee.name" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">{{ employee.name }}さんのインタビュー</h3>
+              <p class="text-gray-600">{{ employee.position }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
