@@ -93,16 +93,25 @@
     </section>
 
     <!-- Features Section -->
-    <section id="kops-way" class="py-20 bg-white rounded-lg relative">
-      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
-      <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">KOPS WAY</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div v-for="(feature, index) in features" :key="index" class="bg-gray-100 p-6 rounded-lg shadow-md">
-            <Check class="text-green-500 w-12 h-12 mb-4" />
-            <h3 class="text-xl font-semibold mb-2 text-gray-800">{{ feature.title }}</h3>
+    <section id="kops-way" class="bg-gray-100 py-16 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center text-green-500">KOPS WAY</h2>
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div v-for="(feature, index) in features" :key="index" class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-semibold">{{ feature.title }}</h3>
+              <Check class="text-green-500 w-8 h-8" />
+            </div>
             <p class="text-gray-700">{{ feature.description }}</p>
+            <div class="mt-4 bg-green-100 p-2 rounded-md">
+              <span class="font-semibold text-green-700">{{ feature.highlight }}</span>
+            </div>
           </div>
+        </div>
+        <div class="text-center">
+          <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl" @click.prevent="scrollToElement('#contact')">
+            KOPSの特徴をもっと見る
+          </a>
         </div>
       </div>
     </section>
