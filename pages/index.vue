@@ -11,10 +11,10 @@
         </div>
         <div class="flex items-center justify-end flex-grow">
           <nav class="hidden md:flex space-x-4 mr-4">
-            <a href="#" class="text-gray-700 hover:text-green-500">Home</a>
-            <a href="#" class="text-gray-700 hover:text-green-500">About</a>
-            <a href="#" class="text-gray-700 hover:text-green-500">Services</a>
-            <a href="#" class="text-gray-700 hover:text-green-500">Contact</a>
+            <a href="#mission" class="text-gray-700 hover:text-green-500" @click="scrollToSection('mission')">MISSION</a>
+            <a href="#message" class="text-gray-700 hover:text-green-500" @click="scrollToSection('message')">MESSAGE</a>
+            <a href="#kops-way" class="text-gray-700 hover:text-green-500" @click="scrollToSection('kops-way')">KOPS WAY</a>
+            <a href="#company-data" class="text-gray-700 hover:text-green-500" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
           </nav>
           <div class="flex space-x-2">
             <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm">応募フォーム</a>
@@ -26,10 +26,10 @@
         </button>
       </div>
       <div v-if="isMenuOpen" class="md:hidden bg-white py-2 rounded-b-lg">
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Home</a>
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">About</a>
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Services</a>
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact</a>
+        <a href="#mission" class="block px-4 py-2 text-gray-700 hover:bg-gray-200" @click="scrollToSection('mission')">MISSION</a>
+        <a href="#message" class="block px-4 py-2 text-gray-700 hover:bg-gray-200" @click="scrollToSection('message')">MESSAGE</a>
+        <a href="#kops-way" class="block px-4 py-2 text-gray-700 hover:bg-gray-200" @click="scrollToSection('kops-way')">KOPS WAY</a>
+        <a href="#company-data" class="block px-4 py-2 text-gray-700 hover:bg-gray-200" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
         <div class="px-4 py-2 flex flex-col space-y-2">
           <a href="https://docs.google.com/forms/d/1GCRT-8486N12IWEg2fSIEuyjQzVT5vXa5jek742WMHA/" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm text-center">お問い合わせ</a>
           <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm text-center">応募フォーム</a>
@@ -52,7 +52,7 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="py-20 bg-white rounded-lg relative">
+    <section id="mission" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 text-center relative z-10">
         <h2 class="text-3xl font-bold mb-8 text-gray-800">MISSION</h2>
@@ -64,7 +64,7 @@
     </section>
 
     <!-- Representative Section -->
-    <section class="py-20 bg-gray-200 rounded-lg relative">
+    <section id="message" class="py-20 bg-gray-200 rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">MESSAGE</h2>
@@ -85,10 +85,10 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 bg-white rounded-lg relative">
+    <section id="kops-way" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">KOPS WAY</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="(feature, index) in features" :key="index" class="bg-gray-100 p-6 rounded-lg shadow-md">
             <Check class="text-green-500 w-12 h-12 mb-4" />
@@ -112,10 +112,10 @@
     </section>
 
     <!-- Company Information Section -->
-    <section class="py-20 bg-white rounded-lg relative">
+    <section id="company-data" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">KOPSについて</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">DATAで見るKOPS</h2>
         <div class="mb-8">
           <a href="#" class="text-green-500 hover:text-green-600 text-lg">→会社情報はこちら</a>
         </div>
@@ -176,10 +176,10 @@
             <p>&copy; 2024 KOPS</p>
           </div>
           <nav class="flex flex-wrap justify-center md:justify-end space-x-4">
-            <a href="#" class="text-white hover:text-green-500">Home</a>
-            <a href="#" class="text-white hover:text-green-500">About</a>
-            <a href="#" class="text-white hover:text-green-500">Services</a>
-            <a href="#" class="text-white hover:text-green-500">Contact</a>
+            <a href="#mission" class="text-white hover:text-green-500" @click="scrollToSection('mission')">MISSION</a>
+            <a href="#message" class="text-white hover:text-green-500" @click="scrollToSection('message')">MESSAGE</a>
+            <a href="#kops-way" class="text-white hover:text-green-500" @click="scrollToSection('kops-way')">KOPS WAY</a>
+            <a href="#company-data" class="text-white hover:text-green-500" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
           </nav>
         </div>
       </div>
@@ -195,6 +195,14 @@ const isMenuOpen = ref<boolean>(false)
 
 const toggleMenu = (): void => {
   isMenuOpen.value = !isMenuOpen.value
+}
+
+const scrollToSection = (sectionId: string): void => {
+  const element = document.getElementById(sectionId)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+  isMenuOpen.value = false
 }
 
 interface Feature {
