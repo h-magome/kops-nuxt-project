@@ -42,8 +42,8 @@
       <div class="absolute inset-0 bg-blue-900 opacity-70 rounded-lg"></div>
       <div class="container mx-auto px-4 text-center relative z-10">
         <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
-          仕事も収入も自分で選ぶ<br>
-          新しいエンジニアの形。
+          仕事も収入も自分で<br>
+          選ぶ新しい働き方。
         </h1>
         <button class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md">
           Learn More
