@@ -111,26 +111,27 @@
             </div>
             <p class="text-gray-700">{{ feature.description }}</p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
-              <span class="font-semibold text-green-700">{{ feature.highlight }}</span>
+              <span class="font-semibold text-green-700">
+                <template v-if="feature.title === '多様な給与制度'">
+                  <a href="#" class="text-green-700 hover:text-green-800">→給与情報・還元制度はこちら</a>
+                </template>
+                <template v-else-if="feature.title === '透明性の高い還元制度'">
+                  <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="text-green-700 hover:text-green-800">→採用情報はこちら</a>
+                </template>
+                <template v-else-if="feature.title === '理想のキャリアを目指す万全のサポート体制'">
+                  <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="text-green-700 hover:text-green-800">→応募フォームはこちら</a>
+                </template>
+                <template v-else>
+                  {{ feature.highlight }}
+                </template>
+              </span>
             </div>
           </div>
         </div>
         <div class="text-center">
-          <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl" @click.prevent="scrollToElement('#contact')">
+          <a href="#mission" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl" @click.prevent="scrollToElement('#contact')">
             KOPSの特徴をもっと見る
           </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Additional Links Section -->
-    <section class="py-10 bg-gray-200 rounded-lg relative">
-      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
-      <div class="container mx-auto px-4 relative z-10">
-        <div class="flex flex-col space-y-4">
-          <a href="#" class="text-green-500 hover:text-green-600 text-lg">→給与情報・還元制度はこちら</a>
-          <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="text-green-500 hover:text-green-600 text-lg">→採用情報はこちら</a>
-          <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="text-green-500 hover:text-green-600 text-lg">→応募フォームはこちら</a>
         </div>
       </div>
     </section>
