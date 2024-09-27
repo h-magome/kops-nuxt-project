@@ -257,14 +257,14 @@
       <div class="container mx-auto text-center">
         <div class="mb-8">
           <h3 class="text-xl font-semibold mb-4 cursor-pointer hover:text-gray-300 transition duration-300 ease-in-out" @click="scrollToTop">メニュー</h3>
-          <ul class="flex flex-wrap justify-center space-x-4">
+          <ul class="flex flex-wrap justify-center items-center space-x-4">
             <li><a href="#mission" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('mission')">MISSION</a></li>
             <li><a href="#message" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('message')">MESSAGE</a></li>
             <li><a href="#kops-way" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('kops-way')">KOPS WAY</a></li>
             <li><a href="#company-data" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a></li>
             <li><a href="#recruitment" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('recruitment')">採用情報</a></li>
             <li><a href="#company-info" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-info')">会社情報</a></li>
-            <li class="mt-4 md:mt-0"><a href="#application-statement" class="inline-block bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110" @click.prevent="scrollToSection('application-statement')">応募フォーム</a></li>
+            <li><a href="#application-statement" class="inline-block bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110" @click.prevent="scrollToSection('application-statement')">応募フォーム</a></li>
           </ul>
         </div>
         <div class="border-t border-gray-700 pt-8">
