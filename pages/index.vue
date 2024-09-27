@@ -15,7 +15,7 @@
             <a href="#company-data" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a>
             <a href="#recruitment" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('recruitment')">採用情報</a>
             <a href="#company-info" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('company-info')">会社情報</a>
-            <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">応募フォーム</a>
+            <a href="#application-statement" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105" @click.prevent="scrollToSection('application-statement')">応募フォーム</a>
           </div>
           <div class="md:hidden">
             <button @click="toggleMenu" class="text-gray-600 hover:text-green-500 focus:outline-none">
@@ -37,7 +37,7 @@
           <a href="#recruitment" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('recruitment')">採用情報</a>
           <a href="#company-info" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('company-info')">会社情報</a>
           <a href="https://docs.google.com/forms/d/1GCRT-8486N12IWEg2fSIEuyjQzVT5vXa5jek742WMHA/" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out">お問い合わせ</a>
-          <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="block px-3 py-2 bg-green-500 text-white hover:bg-green-600 rounded-md transition duration-300 ease-in-out">応募フォーム</a>
+          <a href="#application-statement" class="block px-3 py-2 bg-green-500 text-white hover:bg-green-600 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('application-statement')">応募フォーム</a>
         </div>
       </div>
     </header>
@@ -226,9 +226,9 @@
         <h2 class="text-3xl font-bold mb-8 text-gray-800">応募はこちら！</h2>
         <p class="text-lg mb-4 text-gray-700">あなたと一緒に働けることを楽しみにしております。</p>
         <p class="text-lg mb-8 text-gray-700">ぜひKOPSであなただけの「自由正社員」の形を見つけませんか</p>
-        <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/" class="bg-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition duration-300">
-          応募フォーム
-        </a>
+        <div class="flex justify-center">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScW2PeeYyqmiVGf4Q8lCG5mDMCsbEVpI74Bjz5bXxKIjxODsw/viewform?embedded=true" width="640" height="1672" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
       </div>
     </section>
 
