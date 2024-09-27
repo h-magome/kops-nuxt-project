@@ -1,38 +1,39 @@
 <template>
   <div class="bg-gray-100 min-h-screen flex flex-col font-meiryo">
     <!-- Header -->
-    <header class="bg-white text-gray-800 shadow-md fixed top-0 left-0 right-0 z-50 rounded-b-lg">
-      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-          <div class="flex items-center h-16">
-            <img src="/images/KOPSアイコン.webp" alt="KOPS Logo" class="h-full w-auto">
-            <a href="#" class="text-2xl font-bold text-green-500 flex items-center h-full" style="font-family: 'Rounded Mplus 1c', sans-serif;">KOPS</a>
+    <header class="bg-white text-gray-800 shadow-md fixed top-0 left-0 right-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center cursor-pointer" @click="scrollToTop">
+            <img src="/images/KOPSアイコン.webp" alt="KOPS Logo" class="h-16 w-16 mr-2">
+            <span class="font-bold text-xl text-green-500" style="font-family: 'Rounded Mplus 1c', sans-serif;">KOPS</span>
+          </div>
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="#mission" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('mission')">MISSION</a>
+            <a href="#message" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('message')">MESSAGE</a>
+            <a href="#kops-way" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('kops-way')">KOPS WAY</a>
+            <a href="#company-data" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a>
+            <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">応募フォーム</a>
+          </div>
+          <div class="md:hidden">
+            <button @click="toggleMenu" class="text-gray-600 hover:text-green-500 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="flex items-center justify-end flex-grow">
-          <nav class="hidden md:flex space-x-4 mr-4">
-            <a href="#mission" class="text-gray-700 hover:text-green-500" @click="scrollToSection('mission')">MISSION</a>
-            <a href="#message" class="text-gray-700 hover:text-green-500" @click="scrollToSection('message')">MESSAGE</a>
-            <a href="#kops-way" class="text-gray-700 hover:text-green-500" @click="scrollToSection('kops-way')">KOPS WAY</a>
-            <a href="#company-data" class="text-gray-700 hover:text-green-500" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
-          </nav>
-          <div class="flex space-x-2">
-            <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm">応募フォーム</a>
-          </div>
-        </div>
-        <button @click="toggleMenu" class="md:hidden ml-4">
-          <Menu v-if="!isMenuOpen" class="text-gray-800" />
-          <X v-else class="text-gray-800" />
-        </button>
       </div>
-      <div v-if="isMenuOpen" class="md:hidden bg-white py-2 rounded-b-lg">
-        <a href="#mission" class="block px-4 py-2 text-gray-700 hover:bg-gray-200" @click="scrollToSection('mission')">MISSION</a>
-        <a href="#message" class="block px-4 py-2 text-gray-700 hover:bg-gray-200" @click="scrollToSection('message')">MESSAGE</a>
-        <a href="#kops-way" class="block px-4 py-2 text-gray-700 hover:bg-gray-200" @click="scrollToSection('kops-way')">KOPS WAY</a>
-        <a href="#company-data" class="block px-4 py-2 text-gray-700 hover:bg-gray-200" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
-        <div class="px-4 py-2 flex flex-col space-y-2">
-          <a href="https://docs.google.com/forms/d/1GCRT-8486N12IWEg2fSIEuyjQzVT5vXa5jek742WMHA/" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm text-center">お問い合わせ</a>
-          <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm text-center">応募フォーム</a>
+      <!-- Mobile menu -->
+      <div v-if="isMenuOpen" class="md:hidden bg-white shadow-lg">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#mission" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('mission')">MISSION</a>
+          <a href="#message" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('message')">MESSAGE</a>
+          <a href="#kops-way" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('kops-way')">KOPS WAY</a>
+          <a href="#company-data" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
+          <a href="https://docs.google.com/forms/d/1GCRT-8486N12IWEg2fSIEuyjQzVT5vXa5jek742WMHA/" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out">お問い合わせ</a>
+          <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="block px-3 py-2 bg-green-500 text-white hover:bg-green-600 rounded-md transition duration-300 ease-in-out">応募フォーム</a>
         </div>
       </div>
     </header>
