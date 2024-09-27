@@ -163,22 +163,34 @@
     </section>
 
     <!-- Company Data Section -->
-    <section id="company-data" class="py-20 bg-gray-200 rounded-lg relative">
-      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
-      <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">DATAで見るKOPS</h2>
-        <div class="mb-8">
-          <a href="#" class="text-green-500 hover:text-green-600 text-lg">→会社情報はこちら</a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div v-for="graph in graphs" :key="graph.alt" class="bg-white p-4 rounded-lg shadow-md">
+    <section id="company-data" class="bg-gray-100 py-16 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center text-green-500">DATAで見るKOPS</h2>
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div v-for="graph in graphs" :key="graph.alt" class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-semibold">{{ graph.title }}</h3>
+              <Chart class="text-green-500 w-8 h-8" />
+            </div>
             <img :src="graph.src" :alt="graph.alt" class="w-full h-auto rounded-lg mb-4">
-            <p class="text-sm text-gray-600">{{ graph.description }}</p>
+            <p class="text-gray-700">{{ graph.description }}</p>
+            <div class="mt-4 bg-green-100 p-2 rounded-md">
+              <span class="font-semibold text-green-700">
+                {{ graph.highlight }}
+              </span>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col space-y-4">
-          <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="text-green-500 hover:text-green-600 text-lg">→採用情報はこちら</a>
-          <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="text-green-500 hover:text-green-600 text-lg">→応募フォームはこちら</a>
+        <div class="text-center">
+          <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl mr-4">
+            会社情報はこちら
+          </a>
+          <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl mr-4">
+            採用情報はこちら
+          </a>
+          <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl">
+            応募フォームはこちら
+          </a>
         </div>
       </div>
     </section>
@@ -319,14 +331,15 @@ const features = ref<Feature[]>([
 interface Graph {
   src: string
   alt: string
+  description: string
 }
 
 const graphs = ref<Graph[]>([
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/経験年数.png', alt: '経験年数' },
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/リモートワーク.png', alt: 'リモートワーク率' },
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/エンジニア分野.png', alt: 'エンジニア分野' },
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/社員数.png', alt: '社員数' },
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/単価上昇率.png', alt: '単価上昇率' }
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/経験年数.png', alt: '経験年数', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/リモートワーク.png', alt: 'リモートワーク率', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/エンジニア分野.png', alt: 'エンジニア分野', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/社員数.png', alt: '社員数', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/単価上昇率.png', alt: '単価上昇率', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' }
 ])
 
 const employees = ref<string[]>(['中村', '柿沼'])
