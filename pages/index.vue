@@ -214,25 +214,25 @@
     <section id="company-info" class="py-20 bg-gray-100 rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">会社情報</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-green-500">会社情報</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold mb-4 text-gray-800">会社概要</h3>
-            <ul class="space-y-2">
-              <li><strong>社名：</strong>株式会社KOPS</li>
-              <li><strong>設立：</strong>20XX年X月X日</li>
-              <li><strong>従業員数：</strong>XX名</li>
-              <li><strong>所在地：</strong>東京都〇〇区〇〇町X-X-X</li>
+          <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800 border-b-2 border-green-500 pb-2">会社概要</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center"><span class="font-bold text-green-500 mr-2">社名：</span>株式会社KOPS</li>
+              <li class="flex items-center"><span class="font-bold text-green-500 mr-2">設立：</span>2022年11月24日</li>
+              <li class="flex items-center"><span class="font-bold text-green-500 mr-2">従業員数：</span>9名</li>
+              <li class="flex items-center"><span class="font-bold text-green-500 mr-2">所在地：</span>千葉県船橋市前原西2-14-2 津田沼駅前安田ビル別館2階26</li>
             </ul>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold mb-4 text-gray-800">事業内容</h3>
-            <ul class="list-disc list-inside space-y-2">
-              <li>ITコンサルティング</li>
-              <li>システム開発</li>
-              <li>クラウドサービス提供</li>
-              <li>AI・機械学習ソリューション</li>
-              <li>デジタルマーケティング支援</li>
+          <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800 border-b-2 border-green-500 pb-2">事業内容</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center"><Check class="text-green-500 mr-2" /> ITコンサルティング</li>
+              <li class="flex items-center"><Check class="text-green-500 mr-2" /> システム開発</li>
+              <li class="flex items-center"><Check class="text-green-500 mr-2" /> DX戦略のコンサルティング</li>
+              <li class="flex items-center"><Check class="text-green-500 mr-2" /> AI・機械学習ソリューション</li>
+              <li class="flex items-center"><Check class="text-green-500 mr-2" /> デジタルマーケティング支援</li>
             </ul>
           </div>
         </div>
