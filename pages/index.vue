@@ -133,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center">
+          <div class="text-center">
           <a href="#mission" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl" @click.prevent="scrollToElement('#contact')">
             KOPSの特徴をもっと見る
           </a>
@@ -233,18 +233,27 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 rounded-t-lg">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row justify-between items-center mb-4">
-          <div class="text-center md:text-left mb-4 md:mb-0">
-            <p>&copy; 2024 KOPS</p>
+    <footer class="bg-gray-800 text-white py-8 px-4">
+      <div class="container mx-auto text-center">
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-4 cursor-pointer hover:text-gray-300 transition duration-300 ease-in-out" @click="scrollToTop">メニュー</h3>
+          <ul class="flex flex-wrap justify-center space-x-4">
+            <li><a href="#mission" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('mission')">MISSION</a></li>
+            <li><a href="#message" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('message')">MESSAGE</a></li>
+            <li><a href="#kops-way" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('kops-way')">KOPS WAY</a></li>
+            <li><a href="#company-data" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a></li>
+            <li><a href="#recruitment" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('recruitment')">採用情報</a></li>
+            <li><a href="#company-info" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-info')">会社情報</a></li>
+            <li><a href="#application-statement" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110" @click.prevent="scrollToSection('application-statement')">応募フォーム</a></li>
+          </ul>
+        </div>
+        <div class="border-t border-gray-700 pt-8">
+          <h3 class="text-xl font-semibold mb-4">会社情報</h3>
+          <div class="text-left max-w-fit mx-auto">
+            <p>株式会社KOPS</p>
+            <p>住所: 千葉県船橋市前原西2-14-2 津田沼駅前安田ビル別館2階26</p>
           </div>
-          <nav class="flex flex-wrap justify-center md:justify-end space-x-4">
-            <a href="#mission" class="text-white hover:text-green-500" @click="scrollToSection('mission')">MISSION</a>
-            <a href="#message" class="text-white hover:text-green-500" @click="scrollToSection('message')">MESSAGE</a>
-            <a href="#kops-way" class="text-white hover:text-green-500" @click="scrollToSection('kops-way')">KOPS WAY</a>
-            <a href="#company-data" class="text-white hover:text-green-500" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
-          </nav>
+          <p class="mt-4">&copy; 2024 株式会社KOPS All Rights Reserved.</p>
         </div>
       </div>
     </footer>
