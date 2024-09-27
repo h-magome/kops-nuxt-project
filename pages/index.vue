@@ -1,5 +1,8 @@
 <template>
   <div class="bg-gray-100 min-h-screen flex flex-col font-meiryo">
+    <div v-if="isLoading" class="flex items-center justify-center h-screen">
+      <img src="/images/KOPSロゴ.png" alt="Loading Logo" class="h-16 w-16">
+    </div>
     <!-- Header -->
     <header class="bg-white text-gray-800 shadow-md fixed top-0 left-0 right-0 z-50">
       <div class="container mx-auto px-4">
@@ -261,10 +264,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { Menu, X, Check } from 'lucide-vue-next'
 
 const isMenuOpen = ref<boolean>(false)
+
+const isLoading = ref<boolean>(true)
+
+onMounted(() => {
+  setTimeout(() => {
+    isLoading.value = false
+  }, 1000)
+})
 
 const toggleMenu = (): void => {
   isMenuOpen.value = !isMenuOpen.value
