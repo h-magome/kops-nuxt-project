@@ -159,7 +159,7 @@
       </div>
     </section>
 
-    <!-- Company Information Section -->
+    <!-- Company Data Section -->
     <section id="company-data" class="py-20 bg-gray-200 rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
@@ -177,11 +177,11 @@
       </div>
     </section>
 
-    <!-- Selection Process Section -->
-    <section class="py-20 bg-white rounded-lg relative">
+    <!-- Recruitment Section -->
+    <section id="recruitment" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">選考フロー</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">採用情報</h2>
         <div class="flex flex-wrap justify-center gap-8">
           <div v-for="(step, index) in selectionProcess" :key="index" class="bg-gray-200 p-6 rounded-lg shadow-md text-center w-48">
             <h3 class="text-xl font-semibold mb-2 text-gray-800">{{ step }}</h3>
@@ -190,8 +190,37 @@
       </div>
     </section>
 
+    <!-- Company Information Section -->
+    <section id="company-info" class="py-20 bg-gray-100 rounded-lg relative">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">会社情報</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">会社概要</h3>
+            <ul class="space-y-2">
+              <li><strong>社名：</strong>株式会社KOPS</li>
+              <li><strong>設立：</strong>20XX年X月X日</li>
+              <li><strong>従業員数：</strong>XX名</li>
+              <li><strong>所在地：</strong>東京都〇〇区〇〇町X-X-X</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">事業内容</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>ITコンサルティング</li>
+              <li>システム開発</li>
+              <li>クラウドサービス提供</li>
+              <li>AI・機械学習ソリューション</li>
+              <li>デジタルマーケティング支援</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Application Statement Section -->
-    <section class="py-20 bg-gray-200 rounded-lg relative">
+    <section id="application-statement" class="py-20 bg-gray-200 rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 text-center relative z-10">
         <h2 class="text-3xl font-bold mb-8 text-gray-800">応募はこちら！</h2>
