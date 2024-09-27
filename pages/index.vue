@@ -170,8 +170,11 @@
         <div class="mb-8">
           <a href="#" class="text-green-500 hover:text-green-600 text-lg">→会社情報はこちら</a>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-8">
-          <img v-for="graph in graphs" :key="graph.alt" :src="graph.src" :alt="graph.alt" class="w-full h-auto rounded-lg">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div v-for="graph in graphs" :key="graph.alt" class="bg-white p-4 rounded-lg shadow-md">
+            <img :src="graph.src" :alt="graph.alt" class="w-full h-auto rounded-lg mb-4">
+            <p class="text-sm text-gray-600">{{ graph.description }}</p>
+          </div>
         </div>
         <div class="flex flex-col space-y-4">
           <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="text-green-500 hover:text-green-600 text-lg">→採用情報はこちら</a>
