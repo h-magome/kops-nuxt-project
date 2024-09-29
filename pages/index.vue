@@ -53,8 +53,8 @@
           仕事も収入も自分で<br>
           選ぶ新しい働き方。
         </h1>
-        <button class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md">
-          Learn More
+        <button class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md" @click="scrollToSection('recruitment')">
+          採用情報はこちら
         </button>
       </div>
     </section>
