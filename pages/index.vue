@@ -14,7 +14,7 @@
           <div class="hidden md:flex items-center space-x-6">
             <a href="#mission" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('mission')">MISSION</a>
             <a href="#message" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('message')">MESSAGE</a>
-            <a href="#kops-way" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('kops-way')">KOPS WAY</a>
+            <a href="#kops-way" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('kops-way')">KOPSの強み</a>
             <a href="#company-data" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a>
             <a href="#recruitment" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('recruitment')">採用情報</a>
             <a href="#company-info" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('company-info')">会社情報</a>
@@ -35,7 +35,7 @@
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a href="#mission" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('mission')">MISSION</a>
           <a href="#message" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('message')">MESSAGE</a>
-          <a href="#kops-way" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('kops-way')">KOPS WAY</a>
+          <a href="#kops-way" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('kops-way')">KOPSの強み</a>
           <a href="#company-data" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
           <a href="#recruitment" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('recruitment')">採用情報</a>
           <a href="#company-info" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('company-info')">会社情報</a>
@@ -110,7 +110,7 @@
     <!-- Features Section -->
     <section id="kops-way" class="bg-gray-100 py-16 px-4">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center text-green-500">KOPS WAY</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center text-green-500">KOPSの強み</h2>
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div v-for="(feature, index) in features" :key="index" class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
             <div class="flex items-center justify-between mb-4">
@@ -260,7 +260,7 @@
           <ul class="flex flex-wrap justify-center items-center space-x-4">
             <li><a href="#mission" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('mission')">MISSION</a></li>
             <li><a href="#message" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('message')">MESSAGE</a></li>
-            <li><a href="#kops-way" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('kops-way')">KOPS WAY</a></li>
+            <li><a href="#kops-way" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('kops-way')">KOPSの強み</a></li>
             <li><a href="#company-data" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a></li>
             <li><a href="#recruitment" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('recruitment')">採用情報</a></li>
             <li><a href="#company-info" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-info')">会社情報</a></li>
