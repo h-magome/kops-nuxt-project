@@ -112,28 +112,68 @@
       <div class="container mx-auto">
         <h2 class="text-3xl font-bold mb-12 text-center text-green-500">KOPSの強み</h2>
         <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <div v-for="(feature, index) in features" :key="index" class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+          <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
             <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-semibold">{{ feature.title }}</h3>
+              <h3 class="text-xl font-semibold">多様な給与制度<br>&<br>透明性の高い還元制度</h3>
               <Check class="text-green-500 w-8 h-8" />
             </div>
-            <p class="text-gray-700">{{ feature.description }}</p>
+            <p class="text-gray-700">
+              KOPSでは、あなたの理想が見つかる多様な給与制度があり、自分のスタイルに合った給与精度を自分で選択できます。
+            </p>
+            <p class="text-gray-700">
+              案件単価の最大85%と還元率は業界最高水準。 情報もすべてオープンにされ、明確で透明性のある評価を行っています。 
+            </p>
+            <p class="text-gray-700">
+              そのため、現在転職してきたすべての方が前職より収入UPしています。
+            </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <template v-if="feature.title === '多様な給与制度'">
-                  <a href="#" class="text-green-700 hover:text-green-800">→給与情報・還元制度はこちら</a>
-                </template>
-                <template v-else-if="feature.title === '透明性の高い還元制度'">
-                  <a href="https://jp.indeed.com/cmp/株式会社kops-2/jobs" class="text-green-700 hover:text-green-800">→採用情報はこちら</a>
-                </template>
-                <template v-else-if="feature.title === '理想のキャリアを目指す万全のサポート体制'">
-                  <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="text-green-700 hover:text-green-800">→応募フォームはこちら</a>
-                </template>
-                <template v-else>
-                  {{ feature.highlight }}
-                </template>
+                <a href="#" class="text-green-700 hover:text-green-800">→給与情報・還元制度はこちら</a>
               </span>
             </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-semibold">自由な案件選択制度<br>&<br>理想のキャリアを目指す万全のサポート体制</h3>
+              <Check class="text-green-500 w-8 h-8" />
+            </div>
+            <p class="text-gray-700">
+              すべて開示された案件情報の中から、ご自身の希望に合う案件を選択可能。社員の要望に合わせて追加で案件も獲得してきます。
+            </p>
+            <p class="text-gray-700">
+              新しい技術や上流工程にチャレンジするために個々に合わせて相談・研修を実施。
+            </p>
+            <p class="text-gray-700">
+              スキルや経験を習得するめのサポートは惜しみません。
+            </p>
+            <p class="text-gray-700">
+              社内のホームページや技術ブログの作成など社内副業を通じて、スキルアップが可能。
+              もちろん報酬もしっかりお支払いします。
+              また、自分のアイデアや改善案からプロジェクトを新たに立ち上げることもできます。
+            </p>
+            <div class="mt-4 bg-green-100 p-2 rounded-md">
+              <span class="font-semibold text-green-700">
+                <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="text-green-700 hover:text-green-800">→応募フォームはこちら</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-semibold">アンチブラック体制</h3>
+              <Check class="text-green-500 w-8 h-8" />
+            </div>
+            <p class="text-gray-700">
+              人事・労務・職場衛生関係の資格・国家資格を保有するバックオフィス責任者が社内環境を整備。「残業月平均8時間」「年間休日121日」「土日祝休み」といったホワイトな働き方が叶います。
+            </p>
+            <p class="text-gray-700">
+              徹底したクラウド化&ペーパーレスの社内体制により日々の社内業務はすべてスマホで完結。
+              テキスト・オンラインコミュニケーションを推奨しており、出社義務や強制の社内イベントなどは一切ありません。
+            </p>
+            <p class="text-gray-700">
+              育児・介護休業や関連休暇はもちろん、時差出勤やテレワークもOK。現在はフルリモート社員が3割、リモート併用社員3割の割合です。
+            </p>
           </div>
         </div>
           <div class="text-center">
