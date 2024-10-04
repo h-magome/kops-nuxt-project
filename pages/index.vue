@@ -211,17 +211,23 @@
     </section>
 
     <!-- Employee Interview Section -->
-    <section class="py-20 bg-white rounded-lg relative">
-      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+    <section class="py-20 bg-white rounded-lg relative overflow-hidden">
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10 animate-pulse" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 text-center relative z-10">
-        <p class="text-3xl font-bold mb-8 text-gray-800">INTERVIEW</p>
-        <h2 class="text-4xl mb-8 text-green-500 font-semibold">社員インタビュー</h2>
+        <p class="text-3xl font-bold mb-4 text-gray-800 animate-fade-in-down">INTERVIEW</p>
+        <h2 class="text-4xl mb-12 text-green-500 font-semibold animate-fade-in-up">社員インタビュー</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div v-for="employee in employees" :key="employee.name" class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" @click="openInterview(employee)">
-            <img :src="employee.image" :alt="employee.name" class="w-full h-64 object-cover">
+          <div v-for="employee in employees" :key="employee.name" class="bg-gradient-to-br from-white to-green-100 shadow-lg rounded-lg overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-2xl" @click="openInterview(employee)">
+            <div class="relative">
+              <img :src="employee.image" :alt="employee.name" class="w-full h-64 object-cover transition duration-300 filter hover:brightness-110">
+              <div class="absolute inset-0 bg-green-500 opacity-0 hover:opacity-20 transition duration-300"></div>
+            </div>
             <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">{{ employee.name }}さんのインタビュー</h3>
+              <h3 class="text-xl font-semibold mb-2 text-green-600">{{ employee.name }}さんのインタビュー</h3>
               <p class="text-gray-600">{{ employee.position }}</p>
+              <div class="mt-4">
+                <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-green-700 mr-2">詳細を見る</span>
+              </div>
             </div>
           </div>
         </div>
