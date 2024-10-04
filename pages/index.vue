@@ -114,47 +114,75 @@
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
             <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-semibold">多様な給与制度<br>&<br>透明性の高い還元制度</h3>
-              <Check class="text-green-500 w-8 h-8" />
+              <h3 class="text-xl font-semibold">多様な給与制度</h3>
+              <img src="/images/低価格.svg" alt="給与アイコン" class="w-12 h-12" />
             </div>
             <p class="text-gray-700">
-              KOPSでは、あなたの理想が見つかる多様な給与制度があり、自分のスタイルに合った給与精度を自分で選択できます。
-            </p>
-            <p class="text-gray-700">
-              案件単価の最大85%と還元率は業界最高水準。 情報もすべてオープンにされ、明確で透明性のある評価を行っています。 
-            </p>
-            <p class="text-gray-700">
-              そのため、現在転職してきたすべての方が前職より収入UPしています。
+              KOPSでは、あなたの理想が見つかる多様な給与制度があり、自分のスタイルに合った給与制度を自分で選択できます。
             </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <a href="#" class="text-green-700 hover:text-green-800">→給与情報・還元制度はこちら</a>
+                <a href="#" class="text-green-700 hover:text-green-800">→給与情報はこちら</a>
               </span>
             </div>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
             <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-semibold">自由な案件選択制度<br>&<br>理想のキャリアを目指す万全のサポート体制</h3>
-              <Check class="text-green-500 w-8 h-8" />
+              <h3 class="text-xl font-semibold">透明性の高い還元制度</h3>
+              <img src="/images/実行支援.svg" alt="透明性アイコン" class="w-12 h-12" />
+            </div>
+            <p class="text-gray-700">
+              案件単価の最大85%と還元率は業界最高水準。情報もすべてオープンにされ、明確で透明性のある評価を行っています。
+            </p>
+            <div class="mt-4 bg-green-100 p-2 rounded-md">
+              <span class="font-semibold text-green-700">
+                <a href="#" class="text-green-700 hover:text-green-800">→還元制度の詳細</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-semibold">自由な案件選択制度</h3>
+              <img src="/images/最適な提案.svg" alt="選択アイコン" class="w-12 h-12" />
             </div>
             <p class="text-gray-700">
               すべて開示された案件情報の中から、ご自身の希望に合う案件を選択可能。社員の要望に合わせて追加で案件も獲得してきます。
             </p>
+            <div class="mt-4 bg-green-100 p-2 rounded-md">
+              <span class="font-semibold text-green-700">
+                <a href="#" class="text-green-700 hover:text-green-800">→案件選択の流れ</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-semibold">キャリアサポート体制</h3>
+              <img src="/images/幅広い業務対応.svg" alt="キャリアアイコン" class="w-12 h-12" />
+            </div>
             <p class="text-gray-700">
-              新しい技術や上流工程にチャレンジするために個々に合わせて相談・研修を実施。
-            </p>
-            <p class="text-gray-700">
-              スキルや経験を習得するめのサポートは惜しみません。
-            </p>
-            <p class="text-gray-700">
-              社内のホームページや技術ブログの作成など社内副業を通じて、スキルアップが可能。
-              もちろん報酬もしっかりお支払いします。
-              また、自分のアイデアや改善案からプロジェクトを新たに立ち上げることもできます。
+              新しい技術や上流工程にチャレンジするために個々に合わせて相談・研修を実施。スキルや経験を習得するためのサポートは惜しみません。
             </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <a href="https://docs.google.com/forms/d/1R6DAChGry9UCcR37jIBMZqHbbYh5HktjKk-aFWmHQM0/edit" class="text-green-700 hover:text-green-800">→応募フォームはこちら</a>
+                <a href="#" class="text-green-700 hover:text-green-800">→サポート制度の詳細</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-semibold">社内副業制度</h3>
+              <img src="/images/業務効率化.svg" alt="副業アイコン" class="w-12 h-12" />
+            </div>
+            <p class="text-gray-700">
+              社内のホームページや技術ブログの作成など社内副業を通じて、スキルアップが可能。もちろん報酬もしっかりお支払いします。
+            </p>
+            <div class="mt-4 bg-green-100 p-2 rounded-md">
+              <span class="font-semibold text-green-700">
+                <a href="#" class="text-green-700 hover:text-green-800">→社内副業の事例</a>
               </span>
             </div>
           </div>
@@ -162,18 +190,16 @@
           <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
             <div class="flex items-center justify-between mb-4">
               <h3 class="text-xl font-semibold">アンチブラック体制</h3>
-              <Check class="text-green-500 w-8 h-8" />
+              <img src="/images/継続的なサポート.svg" alt="ワークライフバランスアイコン" class="w-12 h-12" />
             </div>
             <p class="text-gray-700">
-              人事・労務・職場衛生関係の資格・国家資格を保有するバックオフィス責任者が社内環境を整備。「残業月平均8時間」「年間休日121日」「土日祝休み」といったホワイトな働き方が叶います。
+              「残業月平均8時間」「年間休日121日」「土日祝休み」といったホワイトな働き方が叶います。育児・介護休業や関連休暇はもちろん、時差出勤やテレワークもOK。
             </p>
-            <p class="text-gray-700">
-              徹底したクラウド化&ペーパーレスの社内体制により日々の社内業務はすべてスマホで完結。
-              テキスト・オンラインコミュニケーションを推奨しており、出社義務や強制の社内イベントなどは一切ありません。
-            </p>
-            <p class="text-gray-700">
-              育児・介護休業や関連休暇はもちろん、時差出勤やテレワークもOK。現在はフルリモート社員が3割、リモート併用社員3割の割合です。
-            </p>
+            <div class="mt-4 bg-green-100 p-2 rounded-md">
+              <span class="font-semibold text-green-700">
+                <a href="#" class="text-green-700 hover:text-green-800">→働き方の詳細</a>
+              </span>
+            </div>
           </div>
         </div>
           <div class="text-center">
@@ -191,7 +217,7 @@
         <p class="text-3xl font-bold mb-8 text-gray-800">INTERVIEW</p>
         <h2 class="text-4xl mb-8 text-green-500 font-semibold">社員インタビュー</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div v-for="employee in employees" :key="employee.name" class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div v-for="employee in employees" :key="employee.name" class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" @click="openInterview(employee)">
             <img :src="employee.image" :alt="employee.name" class="w-full h-64 object-cover">
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-2">{{ employee.name }}さんのインタビュー</h3>
@@ -201,6 +227,18 @@
         </div>
       </div>
     </section>
+
+    <!-- インタビューポップアップ -->
+    <div v-if="selectedEmployee" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div class="bg-white p-8 rounded-lg max-w-2xl w-full max-h-90vh overflow-y-auto">
+        <h2 class="text-2xl font-bold mb-4">{{ selectedEmployee.name }}さんのインタビュー</h2>
+        <p class="text-gray-600 mb-4">{{ selectedEmployee.position }}</p>
+        <div v-html="selectedEmployee.interview"></div>
+        <button @click="closeInterview" class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+          閉じる
+        </button>
+      </div>
+    </div>
 
     <!-- Company Data Section -->
     <section id="company-data" class="bg-gray-100 py-16 px-4">
@@ -213,7 +251,7 @@
               <Chart class="text-green-500 w-8 h-8" />
             </div>
             <img :src="graph.src" :alt="graph.alt" class="w-full h-auto rounded-lg mb-4">
-            <p class="text-gray-700">{{ graph.description }}</p>
+            <!-- <p class="text-gray-700">{{ graph.description }}</p> -->
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
                 {{ graph.highlight }}
@@ -322,11 +360,21 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { Menu, X, Check } from 'lucide-vue-next'
+import { Menu, X, Check, BookOpenIcon } from 'lucide-vue-next'
 
 const isMenuOpen = ref<boolean>(false)
 
 const isLoading = ref<boolean>(true)
+
+const selectedEmployee = ref<string | null>(null);
+
+const openInterview = (employee: string): void => {
+  selectedEmployee.value = employee
+}
+
+const closeInterview = (): void => {
+  selectedEmployee.value = null
+}
 
 onMounted(() => {
   setTimeout(() => {
@@ -373,11 +421,11 @@ const features = ref<Feature[]>([
 interface Graph {
   src: string
   alt: string
-  description: string
+  highlight: string
 }
 
 const graphs = ref<Graph[]>([
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/経験年数.png', alt: '経験年数', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/経験年数.png', alt: '経験年数', highlight: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
   { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/リモートワーク.png', alt: 'リモートワーク率', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
   { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/エンジニア分野.png', alt: 'エンジニア分野', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
   { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/社員数.png', alt: '社員数', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
