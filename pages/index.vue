@@ -235,22 +235,22 @@
     </section>
 
     <!-- インタビューポップアップ -->
-    <div v-if="selectedEmployee" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 overflow-y-auto" @click="closeInterview">
-      <div class="bg-white p-6 md:p-10 rounded-2xl max-w-5xl w-full my-4 flex flex-col md:flex-row relative shadow-2xl" @click.stop>
-        <button @click="closeInterview" class="absolute top-4 right-4 text-green-500 hover:text-green-700 transition-colors duration-300 z-10">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <div v-if="selectedEmployee" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 overflow-y-auto p-4 sm:p-6 md:p-8" @click="closeInterview">
+      <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl w-full max-w-4xl my-4 flex flex-col md:flex-row relative shadow-2xl" @click.stop>
+        <button @click="closeInterview" class="absolute top-2 right-2 sm:top-4 sm:right-4 text-green-500 hover:text-green-700 transition-colors duration-300 z-10">
+          <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
-        <div class="w-full md:w-1/3 md:pr-10 flex flex-col mb-6 md:mb-0">
-          <img :src="selectedEmployee.image" :alt="selectedEmployee.name" class="w-full h-auto rounded-lg mb-6 shadow-md">
-          <p class="text-2xl font-bold text-green-600">{{ selectedEmployee.name }}さん</p>
-          <p class="text-lg text-gray-600">{{ selectedEmployee.position }}</p>
+        <div class="w-full md:w-1/3 md:pr-6 flex flex-col mb-4 md:mb-0">
+          <img :src="selectedEmployee.image" :alt="selectedEmployee.name" class="w-full h-auto rounded-lg mb-4 shadow-md">
+          <p class="text-xl sm:text-2xl font-bold text-green-600">{{ selectedEmployee.name }}さん</p>
+          <p class="text-base sm:text-lg text-gray-600">{{ selectedEmployee.position }}</p>
         </div>
-        <div class="w-full md:w-2/3 overflow-y-auto max-h-[60vh] md:max-h-[calc(90vh-6rem)] md:pl-10 md:border-l-2 md:border-green-200">
-          <div v-for="(section, index) in selectedEmployee.interview" :key="index" class="mb-8">
-            <h3 class="text-xl font-semibold mb-3 text-green-600">{{ section.heading }}</h3>
-            <p v-html="section.content" class="text-gray-700 leading-relaxed"></p>
+        <div class="w-full md:w-2/3 overflow-y-auto max-h-[50vh] sm:max-h-[60vh] md:max-h-[calc(80vh-4rem)] md:pl-6 md:border-l-2 md:border-green-200">
+          <div v-for="(section, index) in selectedEmployee.interview" :key="index" class="mb-6">
+            <h3 class="text-lg sm:text-xl font-semibold mb-2 text-green-600">{{ section.heading }}</h3>
+            <p v-html="section.content" class="text-sm sm:text-base text-gray-700 leading-relaxed"></p>
           </div>
         </div>
       </div>
