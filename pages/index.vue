@@ -190,7 +190,7 @@
           <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform duration-300">
             <div class="flex items-center justify-between mb-4">
               <h3 class="text-xl font-semibold">アンチブラック体制</h3>
-              <img src="/images/継続的なサポート.svg" alt="ワークライフバランスアイコン" class="w-12 h-12" />
+              <img src="/images/KOPSロゴ.png" alt="ワークライフバランスアイコン" class="w-12 h-12" />
             </div>
             <p class="text-gray-700">
               「残業月平均8時間」「年間休日121日」「土日祝休み」といったホワイトな働き方が叶います。育児・介護休業や関連休暇はもちろん、時差出勤やテレワークもOK。
