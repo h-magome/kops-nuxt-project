@@ -212,7 +212,7 @@
 
     <!-- Employee Interview Section -->
     <section class="py-20 bg-white rounded-lg relative overflow-hidden">
-      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10 animate-pulse" style="background-image: url('/images/KOPSアイコン.webp');"></div>
+      <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 text-center relative z-10">
         <p class="text-3xl font-bold mb-4 text-gray-800 animate-fade-in-down">INTERVIEW</p>
         <h2 class="text-4xl mb-12 text-green-500 font-semibold animate-fade-in-up">社員インタビュー</h2>
@@ -236,18 +236,18 @@
 
     <!-- インタビューポップアップ -->
     <div v-if="selectedEmployee" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50" @click="closeInterview">
-      <div class="bg-white p-10 rounded-2xl max-w-5xl w-full max-h-90vh flex relative shadow-2xl" @click.stop>
+      <div class="bg-white p-6 md:p-10 rounded-2xl max-w-5xl w-full max-h-90vh flex flex-col md:flex-row relative shadow-2xl overflow-y-auto" @click.stop>
         <button @click="closeInterview" class="absolute top-4 right-4 text-green-500 hover:text-green-700 transition-colors duration-300">
           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
-        <div class="w-1/3 pr-10 flex flex-col">
+        <div class="w-full md:w-1/3 md:pr-10 flex flex-col mb-6 md:mb-0">
           <img :src="selectedEmployee.image" :alt="selectedEmployee.name" class="w-full h-auto rounded-lg mb-6 shadow-md">
           <p class="text-2xl font-bold text-green-600">{{ selectedEmployee.name }}さん</p>
           <p class="text-lg text-gray-600">{{ selectedEmployee.position }}</p>
         </div>
-        <div class="w-2/3 overflow-y-auto max-h-[calc(90vh-6rem)] pl-10 border-l-2 border-green-200">
+        <div class="w-full md:w-2/3 overflow-y-auto max-h-[calc(90vh-6rem)] md:pl-10 md:border-l-2 md:border-green-200">
           <div v-for="(section, index) in selectedEmployee.interview" :key="index" class="mb-8">
             <h3 class="text-xl font-semibold mb-3 text-green-600">{{ section.heading }}</h3>
             <p v-html="section.content" class="text-gray-700 leading-relaxed"></p>
