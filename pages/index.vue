@@ -253,7 +253,7 @@
             <img :src="graph.src" :alt="graph.alt" class="w-full h-auto rounded-lg mb-4">
             <!-- <p class="text-gray-700">{{ graph.description }}</p> -->
             <div class="mt-4 bg-green-100 p-2 rounded-md">
-              <span class="font-semibold text-green-700">
+              <span class="font-semibold text-gray-700">
                 {{ graph.highlight }}
               </span>
             </div>
@@ -425,11 +425,11 @@ interface Graph {
 }
 
 const graphs = ref<Graph[]>([
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/経験年数.png', alt: '経験年数', highlight: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/リモートワーク.png', alt: 'リモートワーク率', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/エンジニア分野.png', alt: 'エンジニア分野', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/社員数.png', alt: '社員数', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' },
-  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/単価上昇率.png', alt: '単価上昇率', description: 'ダミーテキストダミーテキストダミーテキストダミーテキスト' }
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/経験年数.png', alt: '経験年数', highlight: '経験5年以上の方が多く活躍中ですが、最近では次世代エンジニア（経験1〜3年想定）の方も積極サポート中です！' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/リモートワーク.png', alt: 'リモートワーク率', highlight: 'フルリモート、リモート併用がおよそ90％。広島、北海道など全国各地で活躍しています！' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/エンジニア分野.png', alt: 'エンジニア分野', highlight: '現状は開発が9割ですが、多職種も積極的に採用しています！' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/社員数.png', alt: '社員数', highlight: '社員爆増中！' },
+  { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/単価上昇率.png', alt: '単価上昇率', highlight: '転職者の単価上昇率は100%！' }
 ])
 
 const employees = ref<string[]>(['中村', '柿沼'])
