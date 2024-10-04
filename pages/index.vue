@@ -78,7 +78,7 @@
         <p class="text-3xl font-bold mb-8 text-gray-800">MESSAGE</p>
         <h2 class="text-4xl mb-8 text-green-500 font-semibold">「これほどスキルのある人がどうして評価されないのだろう…？」</h2>
         <div class="flex flex-col md:flex-row items-center justify-center">
-          <img src="/images/KOPSアイコン.webp" alt="馬込 浩" class="rounded-full w-64 h-64 object-cover mb-8 md:mb-0 md:mr-12" />
+          <img src="/images/リサイズ浩2.png" alt="馬込 浩" class="rounded-full w-64 h-64 object-cover mb-8 md:mb-0 md:mr-12" />
           <div class="max-w-lg">
             <div class="text-left">
               <p class="text-lg mb-8 text-gray-700">
