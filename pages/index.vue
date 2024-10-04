@@ -229,8 +229,8 @@
     </section>
 
     <!-- インタビューポップアップ -->
-    <div v-if="selectedEmployee" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div class="bg-white p-8 rounded-lg max-w-2xl w-full max-h-90vh overflow-y-auto">
+    <div v-if="selectedEmployee" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" @click="closeInterview">
+      <div class="bg-white p-8 rounded-lg max-w-2xl w-full max-h-90vh overflow-y-auto" @click.stop>
         <h2 class="text-2xl font-bold mb-4">{{ selectedEmployee.name }}さんのインタビュー</h2>
         <p class="text-gray-600 mb-4">{{ selectedEmployee.position }}</p>
         <div v-html="selectedEmployee.interview"></div>
@@ -424,6 +424,13 @@ interface Graph {
   highlight: string
 }
 
+interface Employee {
+  name: string
+  position: string
+  image: string
+  interview: string
+}
+
 const graphs = ref<Graph[]>([
   { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/経験年数.png', alt: '経験年数', highlight: '経験5年以上の方が多く活躍中ですが、最近では次世代エンジニア（経験1〜3年想定）の方も積極サポート中です！' },
   { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/リモートワーク.png', alt: 'リモートワーク率', highlight: 'フルリモート、リモート併用がおよそ90％。広島、北海道など全国各地で活躍しています！' },
@@ -432,7 +439,9 @@ const graphs = ref<Graph[]>([
   { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/単価上昇率.png', alt: '単価上昇率', highlight: '転職者の単価上昇率は100%！' }
 ])
 
-const employees = ref<string[]>(['中村', '柿沼'])
+const employees = ref<Employee[]>([
+  { name: 'AN', position: 'WEBエンジニア', image: '/images/中村篤仁.jpg', interview: '中村さんのインタビュー' },
+])
 
 const selectionProcess = ref<string[]>(['応募', '書類選考', '面接', '内定'])
 </script>
