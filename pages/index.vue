@@ -257,9 +257,9 @@
                 {{ graph.highlight }}
               </span>
             </div>
-          </div>
+          </div>  
         </div>
-        <div class="text-center">
+        <!-- <div class="text-center">
           <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
             <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl w-full md:w-auto">
               会社情報はこちら
@@ -271,7 +271,7 @@
               応募フォームはこちら
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
