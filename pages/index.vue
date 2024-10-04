@@ -229,14 +229,24 @@
     </section>
 
     <!-- インタビューポップアップ -->
-    <div v-if="selectedEmployee" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" @click="closeInterview">
-      <div class="bg-white p-8 rounded-lg max-w-2xl w-full max-h-90vh overflow-y-auto" @click.stop>
-        <h2 class="text-2xl font-bold mb-4">{{ selectedEmployee.name }}さんのインタビュー</h2>
-        <p class="text-gray-600 mb-4">{{ selectedEmployee.position }}</p>
-        <div v-html="selectedEmployee.interview"></div>
-        <button @click="closeInterview" class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-          閉じる
+    <div v-if="selectedEmployee" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50" @click="closeInterview">
+      <div class="bg-white p-10 rounded-2xl max-w-5xl w-full max-h-90vh flex relative shadow-2xl" @click.stop>
+        <button @click="closeInterview" class="absolute top-4 right-4 text-green-500 hover:text-green-700 transition-colors duration-300">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
         </button>
+        <div class="w-1/3 pr-10 flex flex-col">
+          <img :src="selectedEmployee.image" :alt="selectedEmployee.name" class="w-full h-auto rounded-lg mb-6 shadow-md">
+          <p class="text-2xl font-bold text-green-600">{{ selectedEmployee.name }}さん</p>
+          <p class="text-lg text-gray-600">{{ selectedEmployee.position }}</p>
+        </div>
+        <div class="w-2/3 overflow-y-auto max-h-[calc(90vh-6rem)] pl-10 border-l-2 border-green-200">
+          <div v-for="(section, index) in selectedEmployee.interview" :key="index" class="mb-8">
+            <h3 class="text-xl font-semibold mb-3 text-green-600">{{ section.heading }}</h3>
+            <p v-html="section.content" class="text-gray-700 leading-relaxed"></p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -428,7 +438,12 @@ interface Employee {
   name: string
   position: string
   image: string
-  interview: string
+  interview: Interview[]
+}
+
+interface Interview {
+  heading: string
+  content: string
 }
 
 const graphs = ref<Graph[]>([
@@ -439,8 +454,26 @@ const graphs = ref<Graph[]>([
   { src: 'https://kops-data-images.s3.ap-northeast-1.amazonaws.com/単価上昇率.png', alt: '単価上昇率', highlight: '転職者の単価上昇率は100%！' }
 ])
 
+const anInterview = ref<Interview[]>([
+  { heading: '▼略歴', content: '広島県出身<br>' +
+  '高校卒業後は大阪で3年間学生生活と社会人経験を積み、地元に戻りWeb/DTPデザイナーとしてキャリアをスタートしました。<br>' +
+  'Web/DTPデザイナー出身でしたがウェブ系エンジニアとなりました。<br>' +
+  '<br>' +
+  '約4年会社員、2年ほどフリーランスでデザイナー・エンジニアとして活動した後、株式会社KOPSへ入社しました。' },
+  { heading: '▼休日の過ごし方', content: '自然や野鳥が大好きなので、山・川・海などへ行って撮影を行っています。<br>' +
+  '数年間リモートワークで部屋の中がメインでした。<br>' +
+  'しかし近年、外出して歩く機会が増え、気分転換や健康的な日々を送れるようになりました。<br>' +
+  'リモートワークは積極的に運動を取り入れるのが重要です！' },
+  { heading: '▼KOPSに入社してよかったこと', content: 'なんと言っても、給与還元率が高いことです。<br>' +
+  '私の場合は働いては生活費、カメラ機材に消えていくため、余裕が持てるのは非常にありがたい点です。<br>' +
+  'また、弊社代表も現役エンジニアですので、エンジニア視点での経営方針により、働きやすい環境を生み出していると感じています。' },
+  { heading: '▼KOPSの課題', content: 'まだまだ社員数が少ない点です。<br>' +
+  'これから増えれば、よりスケールして一人一人の還元もより上がると期待しています。<br>' +
+  'ご応募お待ちしております！' },
+])
+
 const employees = ref<Employee[]>([
-  { name: 'AN', position: 'WEBエンジニア', image: '/images/中村篤仁.jpg', interview: '中村さんのインタビュー' },
+  { name: 'AN', position: 'WEBエンジニア', image: '/images/中村篤仁.jpg', interview: anInterview.value },
 ])
 
 const selectionProcess = ref<string[]>(['応募', '書類選考', '面接', '内定'])
