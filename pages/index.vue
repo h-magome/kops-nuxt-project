@@ -355,7 +355,7 @@
             <li><a href="#message" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('message')">MESSAGE</a></li>
             <li><a href="#kops-way" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('kops-way')">KOPSの強み</a></li>
             <li><a href="#company-data" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a></li>
-            <li><a href="#recruitment" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('recruitment')">採用情報</a></li>
+            <li><a href="https://kops.recruitsite.net/job" class="hover:text-gray-300 transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer">採用情報</a></li>
             <li><a href="#company-info" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-info')">会社情報</a></li>
             <li><a href="#application-statement" class="inline-block bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110" @click.prevent="scrollToSection('application-statement')">応募フォーム</a></li>
           </ul>
