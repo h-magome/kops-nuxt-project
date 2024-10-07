@@ -291,7 +291,7 @@
     </section>
 
     <!-- Recruitment Section -->
-    <section id="recruitment" class="py-20 bg-white rounded-lg relative">
+    <!-- <section id="recruitment" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">採用情報</h2>
@@ -301,10 +301,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Company Information Section -->
-    <section id="company-info" class="py-20 bg-gray-100 rounded-lg relative">
+    <section id="company-info" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-green-500">会社情報</h2>
