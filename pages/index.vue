@@ -16,11 +16,12 @@
             <a href="#message" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('message')">MESSAGE</a>
             <a href="#kops-way" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('kops-way')">KOPSの強み</a>
             <a href="#company-data" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a>
-            <a href="#recruitment" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('recruitment')">採用情報</a>
+            <a href="https://kops.recruitsite.net/job" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" target="_blank" rel="noopener noreferrer">採用情報</a>
             <a href="#company-info" class="text-gray-700 hover:text-green-500 font-medium transition duration-300 ease-in-out border-b-2 border-transparent hover:border-green-500" @click.prevent="scrollToSection('company-info')">会社情報</a>
             <a href="#application-statement" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105" @click.prevent="scrollToSection('application-statement')">応募フォーム</a>
           </div>
-          <div class="md:hidden">
+          <div class="md:hidden flex items-center">
+            <a href="#application-statement" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 mr-4" @click.prevent="scrollToSection('application-statement')">応募フォーム</a>
             <button @click="toggleMenu" class="text-gray-600 hover:text-green-500 focus:outline-none">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -37,10 +38,8 @@
           <a href="#message" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('message')">MESSAGE</a>
           <a href="#kops-way" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('kops-way')">KOPSの強み</a>
           <a href="#company-data" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('company-data')">DATAで見るKOPS</a>
-          <a href="#recruitment" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('recruitment')">採用情報</a>
+          <a href="https://kops.recruitsite.net/job" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer">採用情報</a>
           <a href="#company-info" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('company-info')">会社情報</a>
-          <a href="https://docs.google.com/forms/d/1GCRT-8486N12IWEg2fSIEuyjQzVT5vXa5jek742WMHA/" class="block px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out">お問い合わせ</a>
-          <a href="#application-statement" class="block px-3 py-2 bg-green-500 text-white hover:bg-green-600 rounded-md transition duration-300 ease-in-out" @click="scrollToSection('application-statement')">応募フォーム</a>
         </div>
       </div>
     </header>
@@ -53,7 +52,7 @@
           仕事も収入も自分で<br>
           選ぶ新しい働き方。
         </h1>
-        <button class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md" @click="scrollToSection('recruitment')">
+        <button class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md" @click="scrollToSection('application-statement')">
           採用情報はこちら
         </button>
       </div>
@@ -122,7 +121,7 @@
             </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <a href="#" class="text-green-700 hover:text-green-800">→給与情報はこちら</a>
+                <!-- <a href="#" class="text-green-700 hover:text-green-800">→給与情報はこちら</a> -->
               </span>
             </div>
           </div>
@@ -137,7 +136,7 @@
             </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <a href="#" class="text-green-700 hover:text-green-800">→還元制度の詳細</a>
+                <!-- <a href="#" class="text-green-700 hover:text-green-800">→還元制度の詳細</a> -->
               </span>
             </div>
           </div>
@@ -152,7 +151,7 @@
             </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <a href="#" class="text-green-700 hover:text-green-800">→案件選択の流れ</a>
+                <!-- <a href="#" class="text-green-700 hover:text-green-800">→案件選択の流れ</a> -->
               </span>
             </div>
           </div>
@@ -167,7 +166,7 @@
             </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <a href="#" class="text-green-700 hover:text-green-800">→サポート制度の詳細</a>
+                <!-- <a href="#" class="text-green-700 hover:text-green-800">→サポート制度の詳細</a> -->
               </span>
             </div>
           </div>
@@ -182,7 +181,7 @@
             </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <a href="#" class="text-green-700 hover:text-green-800">→社内副業の事例</a>
+                <!-- <a href="#" class="text-green-700 hover:text-green-800">→社内副業の事例</a> -->
               </span>
             </div>
           </div>
@@ -197,13 +196,13 @@
             </p>
             <div class="mt-4 bg-green-100 p-2 rounded-md">
               <span class="font-semibold text-green-700">
-                <a href="#" class="text-green-700 hover:text-green-800">→働き方の詳細</a>
+                <!-- <a href="#" class="text-green-700 hover:text-green-800">→働き方の詳細</a> -->
               </span>
             </div>
           </div>
         </div>
           <div class="text-center">
-          <a href="#mission" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl" @click.prevent="scrollToElement('#contact')">
+          <a href="#application-statement" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl" @click.prevent="scrollToSection('application-statement')">
             KOPSの特徴をもっと見る
           </a>
         </div>
@@ -292,7 +291,7 @@
     </section>
 
     <!-- Recruitment Section -->
-    <section id="recruitment" class="py-20 bg-white rounded-lg relative">
+    <!-- <section id="recruitment" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">採用情報</h2>
@@ -302,10 +301,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Company Information Section -->
-    <section id="company-info" class="py-20 bg-gray-100 rounded-lg relative">
+    <section id="company-info" class="py-20 bg-white rounded-lg relative">
       <div class="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-10" style="background-image: url('/images/KOPSアイコン.webp');"></div>
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-3xl font-bold text-center mb-12 text-green-500">会社情報</h2>
@@ -356,7 +355,7 @@
             <li><a href="#message" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('message')">MESSAGE</a></li>
             <li><a href="#kops-way" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('kops-way')">KOPSの強み</a></li>
             <li><a href="#company-data" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-data')">DATAで見るKOPS</a></li>
-            <li><a href="#recruitment" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('recruitment')">採用情報</a></li>
+            <li><a href="https://kops.recruitsite.net/job" class="hover:text-gray-300 transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer">採用情報</a></li>
             <li><a href="#company-info" class="hover:text-gray-300 transition duration-300 ease-in-out" @click.prevent="scrollToSection('company-info')">会社情報</a></li>
             <li><a href="#application-statement" class="inline-block bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110" @click.prevent="scrollToSection('application-statement')">応募フォーム</a></li>
           </ul>
