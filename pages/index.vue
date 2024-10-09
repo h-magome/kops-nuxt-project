@@ -21,7 +21,7 @@
             <a href="#application-statement" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105" @click.prevent="scrollToSection('application-statement')">応募フォーム</a>
           </div>
           <div class="md:hidden flex items-center">
-            <a href="#application-statement" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 mr-4" @click.prevent="scrollToSection('application-statement')">応募フォーム</a>
+            <a href="https://kops.recruitsite.net/job" class="bg-green-500 text-white hover:bg-green-600 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 mr-4" target="_blank" rel="noopener noreferrer">応募フォーム</a>
             <button @click="toggleMenu" class="text-gray-600 hover:text-green-500 focus:outline-none">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
