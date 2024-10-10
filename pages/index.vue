@@ -52,9 +52,9 @@
           仕事も収入も自分で<br>
           選ぶ新しい働き方。
         </h1>
-        <button class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md" @click="scrollToSection('application-statement')">
+        <a href="https://kops.recruitsite.net/job" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300 shadow-md">
           採用情報はこちら
-        </button>
+        </a>
       </div>
     </section>
 
@@ -201,11 +201,11 @@
             </div>
           </div>
         </div>
-          <div class="text-center">
+        <!-- <div class="text-center">
           <a href="#application-statement" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl" @click.prevent="scrollToSection('application-statement')">
             KOPSの特徴をもっと見る
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
 
