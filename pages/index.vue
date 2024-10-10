@@ -201,11 +201,11 @@
             </div>
           </div>
         </div>
-          <div class="text-center">
+        <!-- <div class="text-center">
           <a href="#application-statement" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl" @click.prevent="scrollToSection('application-statement')">
             KOPSの特徴をもっと見る
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
 
